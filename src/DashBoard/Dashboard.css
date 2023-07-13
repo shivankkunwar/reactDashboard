@@ -1,0 +1,73 @@
+.dashboard {
+    display: flex;
+    height: 100vh;
+    background-color: #f5f5f5;
+  }
+  
+  .left-container {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    background-color: #000000;
+    color: #ffffff;
+    margin: 20px;
+    border-radius: 30px;
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 87.77px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .route-items {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .route-item {
+    display: flex;
+    align-items: center;
+    
+    margin-bottom: 30px;
+  }
+  
+  .route-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+  }
+  
+  .route-text {
+    font-size: 1rem;
+  }
+  
+  .bottom-options {
+    margin-top: auto;
+  }
+  
+  .bottom-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .bottom-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+  }
+  
+  .bottom-text {
+    font-size: 0.9rem;
+  }
+  
+  .right-container {
+    flex: 1;
+    
+  }
+  .active{
+    font-weight: bold;
+  }
