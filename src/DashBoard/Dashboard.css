@@ -159,6 +159,7 @@
     flex-direction: column;
     justify-content: flex-end;
     height: 100%;
+    font-size: 1.5rem;
   }
   
   .top-card-top-left {
@@ -173,16 +174,18 @@
   
   .top-card-value {
     font-weight: bold;
+    margin: 0;
   }
   
   .top-card-icon {
     width: 20px;
     height: 20px;
+    padding-bottom: 70px;
   }
                                 /* BOTTOM CARDS */
   .bottom-cards {
     display: flex;
-    flex-wrap: wrap;
+   
    
     justify-content: space-between;
     width: 100%;
@@ -232,4 +235,125 @@
   }
 
 
-  
+                /* Bottom Cards */
+                /* Card1 */
+  .bottom-card {
+  width: 380px;
+  height: 156px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bottom-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.bottom-card-top h3 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.bottom-card-top select {
+  font-size: 0.7rem;
+ 
+}
+.bottom-card-content{
+    display: flex;
+}
+.pie-chart {
+  width: 160px;
+  height: 160px;
+  margin-right: 20px;
+}
+
+.color-description {
+  display: flex;
+  flex-direction: column;
+}
+
+.color-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.color {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.green {
+  background-color: #98D89E;
+}
+
+.yellow {
+  background-color: #EE8484;
+}
+
+.pink {
+  background-color: #F6DC7D;
+}
+
+.description {
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+.percent {
+  font-size: 12px;
+  font-weight: bold;
+}
+                /* CARD2 */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.see-more-button {
+  background-color: transparent;
+  border: none;
+  color: #888;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.small-cards {
+  margin-top: 16px;
+}
+
+.small-card {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+}
+.small-cards-container {
+    max-height: 80%;
+    overflow-y: auto;
+  }
+.colored-line {
+    width: 4px;
+    height: 100%;
+    background-color: red;
+    
+    margin-right: 12px;
+}
+
+.card-details {
+  flex: 1;
+}
+
+.card-details p {
+  margin: 0;
+  font-size: 14px;
+}

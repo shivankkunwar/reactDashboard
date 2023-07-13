@@ -3,6 +3,7 @@ import './DashBoard.css'
 import MainChart from './charts/MainChart'
 import AnotherChart from './charts/AnotherChart'
 import icon1 from "./cardImg/icon1.svg"
+import MyPieChart from './charts/MyPiechat'
 function Dashboard() {
   return (
     <div className="dashboard">
@@ -123,22 +124,63 @@ function Dashboard() {
         </div>
         <div className="bottom-cards">
             <div className="bottom-card">
-                <h3>Top Products</h3>
-                <ul>
-                <li>Product 1</li>
-                <li>Product 2</li>
-                <li>Product 3</li>
-                <li>Product 4</li>
-                </ul>
+                                <div className="bottom-card-top">
+                                    <h3>Top Products</h3>
+                                    <select style={{marginBottom:'15px',marginLeft:'40px',border:'none',color:"#858585"}}>
+                                    <option>May-June 2023</option>
+                                    <option>July-August 2023</option>
+                                   
+                                    </select>
+                                </div>
+                        <div className="bottom-card-content">
+                                <div className="pie-chart">
+                                <MyPieChart/>
+                                </div>
+                        <div className="color-description">
+                            <div className="color-item">
+                                <div className="color green"></div>
+                                <p className="description">Basic Trees</p>
+                                <p className="percent">50%</p>
+                            </div>
+                            <div className="color-item">
+                                <div className="color yellow"></div>
+                                <p className="description">Custom Short Pants</p>
+                                <p className="percent">30%</p>
+                            </div>
+                            <div className="color-item">
+                                <div className="color pink"></div>
+                                <p className="description">Super Hoodies</p>
+                                <p className="percent">20%</p>
+                            </div>
+                        </div>
+                    </div>
             </div>
             <div className="bottom-card">
-                <h3>Today's Schedule</h3>
-                <ul>
-                <li>Meeting with client</li>
-                <li>Launch new product</li>
-                <li>Attend conference</li>
-                </ul>
+            <div className="nav">
+                  <h3>Today's Schedule</h3>
+                  <button className="see-more-button">See All &gt;</button>
             </div>
+            <div className="small-cards-container">
+                  <div className="small-cards">
+                    <div className="small-card">
+                      <div className="colored-line"></div>
+                      <div className="card-details">
+                        <p>Meeting</p>
+                        <p>10:00 AM</p>
+                        <p>Conference Room</p>
+                      </div>
+                    </div>
+                    <div className="small-card">
+                      <div className="colored-line"></div>
+                      <div className="card-details">
+                        <p>Product Launch</p>
+                        <p>02:00 PM</p>
+                        <p>Event Hall</p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              </div>
          </div>
         </div>
         

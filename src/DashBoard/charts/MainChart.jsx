@@ -40,7 +40,7 @@ const MainChart = () => {
     <div >
     <div>
       <h2 style={{marginBottom:'0px',marginLeft:'40px'}}>Activities</h2>
-      <select style={{marginBottom:'15px',marginLeft:'40px',border:'none'}}>
+      <select style={{marginBottom:'15px',marginLeft:'40px',border:'none',color:"#858585"}}>
         <option>May-June 2023</option>
         <option>July-August 2023</option>
         {/* Add more options for different month groups */}
