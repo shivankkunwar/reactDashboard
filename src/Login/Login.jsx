@@ -10,8 +10,11 @@ function Login() {
             <span className='board'>Board.</span>
         </div>
         <div className="right-container">
+            <div className="signinTitle">
             <h1 className="signin">Sign In</h1>
             <p className="subtitle">Sign into your account</p>
+            </div>
+            
             <div className="button-row">
                 <button className="google-btn"> 
                 

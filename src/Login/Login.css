@@ -19,8 +19,10 @@
     justify-content: center;
     align-items: center;
     height: 100%;
+    text-align: left;
+    
 }
-   
+  
 .board {
     font-size: 72px;
     font-weight: 700;
@@ -44,14 +46,32 @@
   
   
   .signin {
-    font-size: 36px;
+    font-size: 2rem;
     font-weight: 700;
+    margin: 0;
+    text-align: left;
   }
-  
+  .signinTitle{
+    margin-left: -25%;
+    text-align: left;
+  }
   .subtitle {
     font-size: 18px;
     margin-bottom: 20px;
+    margin-top: 5px; /* Adjust the top margin as desired */
+    text-align: left;
   }
+  @media (max-width: 480px) {
+    .signinTitle {
+      margin-left: 0; /* Reset the margin for smaller screens */
+      text-align: center; /* Center the text for smaller screens */
+    }
+  
+    .subtitle {
+      text-align: center; /* Center the text for smaller screens */
+    }
+  }
+ 
   
   .button-row {
     display: flex;
@@ -63,7 +83,7 @@
   .google-btn,
   .apple-btn {
     padding: 10px 4px;
-    margin: 0 10px;
+    margin: 0 5px;
     font-size: 0.8rem; /* Relative font size using em */
     border: none;
     background-color: #ffffff;
@@ -77,6 +97,10 @@
     width: 45%;
   }
   @media (max-width: 480px) {
+    .signinTitle{
+        align-items: center;
+     
+       }
     .google-btn,
     .apple-btn {
       font-size: 0.9em; 
@@ -84,6 +108,10 @@
   }
   
   @media (max-width: 320px) {
+    .signinTitle{
+        margin-left: 0px;
+     
+       }
     .google-btn,
     .apple-btn {
       font-size: 0.8em; 
@@ -125,6 +153,7 @@
     background-color: Black;
     color: white;
     cursor: pointer;
+    border-radius: 10px;
   }
   label{
     font-size: 0.9rem;
