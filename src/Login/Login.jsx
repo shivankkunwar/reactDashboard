@@ -1,43 +1,68 @@
-import React from 'react'
+import React from "react";
 import "./Login.css";
-import google from "../icons/google.svg"
-import apple from "../icons/apple.svg"
-function Login() {
+import google from "../icons/google.svg";
+import apple from "../icons/apple.svg";
+import { GoogleOAuthProvider } from "@react-oauth/google";
+import { GoogleLogin } from "@react-oauth/google";
+
+
+
+
+function Login( {setAuth}) {
+  
+    
   return (
-    <div className="main-container">
-        <div className="left-container">
-            
-            <span className='board'>Board.</span>
+    
+    <GoogleOAuthProvider clientId='194793221340-noj4role6bsb6ip65h5r61ckg56ors5a.apps.googleusercontent.com'>
+     
+      
+      <div className="lmain-container">
+        <div className="lleft-container">
+          <span className="board">Board.</span>
         </div>
-        <div className="right-container">
-            <div className="signinTitle">
+        <div className="lright-container">
+          <div className="signinTitle">
             <h1 className="signin">Sign In</h1>
             <p className="subtitle">Sign into your account</p>
+          </div>
+
+          <div className="button-row">
+            <div className="google-btn">
+              <GoogleLogin
+                className="innerGoogle"
+                onSuccess={(credentialResponse) => {
+                  console.log(credentialResponse);
+                  setAuth(credentialResponse.credential);
+                }}
+                onError={() => {
+                  console.log("Login Failed");
+                }}
+              />
             </div>
-            
-            <div className="button-row">
-                <button className="google-btn"> 
-                
-                <img src={google} className='icons' alt="" />
-                 Login with Google
-                </button>
-                <button className="apple-btn">
-                <img src={apple} className='icons'alt="" />
-                Login with Apple</button>
-            </div>
-            <form className="login-form">
-            <label htmlFor="">Email address</label>   
+            <button className="apple-btn">
+              <img src={apple} className="icons" alt="" />
+              <span className="text">Login with Apple</span>
+            </button>
+          </div>
+          <form className="login-form">
+            <label htmlFor="">Email address</label>
             <input type="enter" placeholder="enter email address" />
-            <label htmlFor="">Password</label>   
+            <label htmlFor="">Password</label>
             <input type="password" placeholder="enter password" />
-            <a href="#" className="forgot-password">Forgot password?</a>
-            <button type="submit" className="signin-btn">Sign In</button>
-            </form>
-            <p className="register">Don't have an account? Register here</p>
+            <a href="#" className="forgot-password">
+              Forgot password?
+            </a>
+            <button type="submit" className="signin-btn">
+              Sign In
+            </button>
+          </form>
+          <p className="register">
+            Don't have an account?<a href="#"> Register here</a>{" "}
+          </p>
         </div>
-        
-    </div>
-  )
+      </div>
+    </GoogleOAuthProvider>
+  );
 }
 
-export default Login
+export default Login;

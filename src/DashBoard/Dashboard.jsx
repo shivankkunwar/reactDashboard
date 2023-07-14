@@ -2,47 +2,50 @@ import React from 'react'
 import './DashBoard.css'
 import MainChart from './charts/MainChart'
 import AnotherChart from './charts/AnotherChart'
-import icon1 from "./cardImg/icon1.svg"
+import {icon1,icon2,icon3,icon4} from "./cardImg/Icons"
+import {dashboard, schedules, settings, transactions, users} from "./sidebarImg/sideBarImg"
+import bell from "./cardImg/bell.svg"
+import profile from "./cardImg/profile.svg"
 import MyPieChart from './charts/MyPiechat'
 function Dashboard() {
   return (
-    <div className="dashboard">
-      <div className="left-container">
-        <h1 className="title">Board.</h1>
-        <div className="route-items">
-          <div className="route-item">
-            <img src="icon1.png" alt="Icon" className="route-icon" />
-            <span className="route-text active">Dashboard</span>
+    <div className="app-dashboard">
+      <div className="app-left-container">
+        <h1 className="app-title">Board.</h1>
+        <div className="app-route-items">
+          <div className="app-route-item">
+            <img src={dashboard} alt="Icon" className="app-route-icon" />
+            <span className="app-route-text app-active">Dashboard</span>
           </div>
-          <div className="route-item">
-            <img src="icon2.png" alt="Icon" className="route-icon" />
-            <span className="route-text">Transactions</span>
+          <div className="app-route-item">
+            <img src={transactions} alt="Icon" className="app-route-icon" />
+            <span className="app-route-text">Transactions</span>
           </div>
-          <div className="route-item">
-            <img src="icon3.png" alt="Icon" className="route-icon" />
-            <span className="route-text">Schedule</span>
+          <div className="app-route-item">
+            <img src={schedules} alt="Icon" className="app-route-icon" />
+            <span className="app-route-text">Schedule</span>
           </div>
-          <div className="route-item">
-            <img src="icon4.png" alt="Icon" className="route-icon" />
-            <span className="route-text">Users</span>
+          <div className="app-route-item">
+            <img src={users} alt="Icon" className="app-route-icon" />
+            <span className="app-route-text">Users</span>
           </div>
-          <div className="route-item">
-            <img src="icon5.png" alt="Icon" className="route-icon" />
-            <span className="route-text">Settings</span>
+          <div className="app-route-item">
+            <img src={settings} alt="Icon" className="app-route-icon" />
+            <span className="app-route-text">Settings</span>
           </div>
         </div>
-        <div className="bottom-options">
-          <div className="bottom-option">
+        <div className="app-bottom-options">
+          <div className="app-bottom-option">
             
-            <span className="bottom-text">Help</span>
+            <span className="app-bottom-text">Help</span>
           </div>
-          <div className="bottom-option">
+          <div className="app-bottom-option">
             
-            <span className="bottom-text">Contact Us</span>
+            <span className="app-bottom-text">Contact Us</span>
           </div>
         </div>
       </div>
-      <div className="right-container">
+      <div className="app-right-container">
         <nav className='nav'>
           <h2>Dashboard</h2>
           <div className="right-elements">
@@ -50,12 +53,12 @@ function Dashboard() {
             <input type="text" placeholder="Search..."/>
           </div>
           <div className="profile-picture">
-            {/* <img src="profile.png" alt="PP"/> */}
-            PP
+            <img src={bell} alt="PP"/>
+           
           </div>
           <div className="profile-picture">
-            {/* <img src="profile.png" alt="PP"/> */}
-            PP
+            <img src={profile} alt="PP"/>
+            
           </div>
           </div>
          
@@ -85,7 +88,7 @@ function Dashboard() {
                         </div>
                         <div className="top-card-right">
                             <div className="top-card-top-left">
-                                <img src={icon1} alt="Icon" className="top-card-icon" />
+                                <img src={icon2} alt="Icon" className="top-card-icon" />
                             </div>
                         </div>
             </div>
@@ -98,7 +101,7 @@ function Dashboard() {
                         </div>
                         <div className="top-card-right">
                             <div className="top-card-top-left">
-                                <img src={icon1} alt="Icon" className="top-card-icon" />
+                                <img src={icon3} alt="Icon" className="top-card-icon" />
                             </div>
                         </div>
             </div>
@@ -111,7 +114,7 @@ function Dashboard() {
                         </div>
                         <div className="top-card-right">
                             <div className="top-card-top-left">
-                                <img src={icon1} alt="Icon" className="top-card-icon" />
+                                <img src={icon4} alt="Icon" className="top-card-icon" />
                             </div>
                         </div>
             </div>
@@ -156,7 +159,7 @@ function Dashboard() {
                     </div>
             </div>
             <div className="bottom-card">
-            <div className="nav">
+            <div className="cd2-nav">
                   <h3>Today's Schedule</h3>
                   <button className="see-more-button">See All &gt;</button>
             </div>

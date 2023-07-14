@@ -1,93 +1,104 @@
-.dashboard {
-    display: flex;
-    height: 100vh;
-    background-color: #f5f5f5;
+.app-dashboard {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.app-left-container {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  background-color: #000000;
+  color: #ffffff;
+  margin: 20px;
+  border-radius: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-title {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 87.77px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.app-route-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-route-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.app-route-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.app-route-text {
+  font-size: 1rem;
+}
+@media (max-width: 800px) {
+  .app-route-text {
+    display: none;
   }
+}
+
+@media (max-width: 480px) {
   
-  .left-container {
-    display: flex;
-    flex-direction: column;
-    width: 20%;
-    background-color: #000000;
-    color: #ffffff;
-    margin: 20px;
-    border-radius: 30px;
-  }
+}
+.app-bottom-options {
+  margin-top: auto;
+}
+
+.app-bottom-option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.app-bottom-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.app-bottom-text {
+  font-size: 0.8rem;
   
-  .title {
-    font-size: 2rem;
-    font-weight: 700;
-    line-height: 87.77px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  
-  .route-items {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .route-item {
-    display: flex;
-    align-items: center;
-    
-    margin-bottom: 30px;
-  }
-  
-  .route-icon {
-    width: 16px;
-    height: 16px;
-    margin-right: 10px;
-  }
-  
-  .route-text {
-    font-size: 1rem;
-  }
-  
-  .bottom-options {
-    margin-top: auto;
-  }
-  
-  .bottom-option {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-  }
-  
-  .bottom-icon {
-    width: 16px;
-    height: 16px;
-    margin-right: 10px;
-  }
-  
-  .bottom-text {
-    font-size: 0.8rem;
-  }
-  
- 
-  .active{
-    font-weight: bold;
-  }
+}
+
+.app-active {
+  font-weight: bold;
+}
+ /* RIGHT CONTAINER */
+.app-right-container {
+  width: 80%;
+  background-color: #f5f5f5;
+  margin: 0px 45px;
+  display: flex;
+  flex-direction: column;
+}
 
 
-  .right-container {
-    width: 80%;
-    background-color: #f5f5f5;
-    
-    margin: 0px 45px;
-    display: flex;
-    flex-direction: column;
-
-  }
   
   .nav {
    
-    top: 0;
+    
     background-color: transparent;
     height: 30px;
     display: flex;
     justify-content: space-between;
+   
     align-items: center;
+    margin-top: 30px;
     margin-bottom: 10px;
     width: 100%;
   }
@@ -105,6 +116,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    padding: 10px;
     margin-bottom: 10px;
   }
   .search-bar input{
@@ -118,7 +130,7 @@
   }
   
   .profile-picture {
-    margin-right: 0;
+    margin-right: 10px;
   }
   
   .icon {
@@ -150,7 +162,7 @@
   .top-card-right {
     width: 20%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-start;
   }
   
@@ -159,7 +171,8 @@
     flex-direction: column;
     justify-content: flex-end;
     height: 100%;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
+    padding: 10px;
   }
   
   .top-card-top-left {
@@ -168,7 +181,7 @@
   }
   
   .top-card-text {
-    font-size: 12px;
+    font-size: 0.9rem;
     margin-bottom: 5px;
   }
   
@@ -176,11 +189,15 @@
     font-weight: bold;
     margin: 0;
   }
-  
+  @media (max-width: 840px) {
+    .top-card-bottom-left  {
+      font-size: 1rem;
+    }
+  }
   .top-card-icon {
     width: 20px;
     height: 20px;
-    padding-bottom: 70px;
+    padding-bottom: 69px;
   }
                                 /* BOTTOM CARDS */
   .bottom-cards {
@@ -195,7 +212,7 @@
   
   .top-card{
     width: 20%;
-    margin: 10px 0;
+    
     background-color: #f0f0f0;
     border-radius: 20px;
   }
@@ -314,7 +331,7 @@
   font-weight: bold;
 }
                 /* CARD2 */
-.nav {
+.cd2-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
