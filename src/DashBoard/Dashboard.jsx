@@ -1,5 +1,5 @@
 import React from 'react'
-import './DashBoard.css'
+import './Dashboard.css'
 import MainChart from './charts/MainChart'
 import AnotherChart from './charts/AnotherChart'
 import {icon1,icon2,icon3,icon4} from "./cardImg/Icons"
