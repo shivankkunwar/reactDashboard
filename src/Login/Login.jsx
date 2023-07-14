@@ -9,8 +9,8 @@ import { GoogleLogin } from "@react-oauth/google";
 
 
 function Login( {setAuth}) {
+ 
   
-    
   return (
     
     <GoogleOAuthProvider clientId='194793221340-noj4role6bsb6ip65h5r61ckg56ors5a.apps.googleusercontent.com'>
@@ -29,7 +29,7 @@ function Login( {setAuth}) {
           <div className="button-row">
             <div className="google-btn">
               <GoogleLogin
-                className="innerGoogle"
+                className='innerGoogle'
                 onSuccess={(credentialResponse) => {
                   console.log(credentialResponse);
                   setAuth(credentialResponse.credential);
