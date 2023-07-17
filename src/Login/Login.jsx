@@ -13,7 +13,7 @@ function Login( {setAuth}) {
   
   return (
     
-    <GoogleOAuthProvider clientId='194793221340-noj4role6bsb6ip65h5r61ckg56ors5a.apps.googleusercontent.com'>
+    <GoogleOAuthProvider clientId=''>
      
       
       <div className="lmain-container">
